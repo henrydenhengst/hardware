@@ -1,0 +1,510 @@
+cachyos-dell
+    description: Laptop
+    product: Latitude E5530 non-vPro
+    vendor: Dell Inc.
+    version: 01
+    serial: HJ19XW1
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 smp vsyscall32
+    configuration: boot=normal chassis=laptop uuid=4c4c4544-004a-3110-8039-c8c04f585731
+  *-core
+       description: Motherboard
+       product: 05GRXT
+       vendor: Dell Inc.
+       physical id: 0
+       version: A00
+       serial: /HJ19XW1/CN1296132M0536/
+     *-firmware
+          description: BIOS
+          vendor: Dell Inc.
+          physical id: 0
+          version: A09
+          date: 12/10/2012
+          size: 64KiB
+          capacity: 14MiB
+          capabilities: pci pnp upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb smartbattery biosbootspecification netboot uefi
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz
+          vendor: Intel Corp.
+          physical id: 51
+          bus info: cpu@0
+          version: 6.58.9
+          slot: SOCKET 0
+          size: 3089MHz
+          capacity: 3300MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm ida arat pln pts vnmi md_clear flush_l1d cpufreq
+          configuration: cores=2 enabledcores=2 microcode=33 threads=4
+        *-cache:0
+             description: L2 cache
+             physical id: 41
+             slot: CPU Internal L2
+             size: 512KiB
+             capacity: 512KiB
+             capabilities: internal write-through unified
+             configuration: level=2
+        *-cache:1
+             description: L1 cache
+             physical id: 42
+             slot: CPU Internal L1
+             size: 128KiB
+             capacity: 128KiB
+             capabilities: internal write-through data
+             configuration: level=1
+        *-cache:2
+             description: L3 cache
+             physical id: 43
+             slot: CPU Internal L3
+             size: 3MiB
+             capacity: 3MiB
+             capabilities: internal write-back unified
+             configuration: level=3
+     *-memory
+          description: System Memory
+          physical id: 44
+          slot: System board or motherboard
+          size: 8GiB
+        *-bank:0
+             description: SODIMM DDR3 Synchronous 1600 MHz (0,6 ns)
+             product: NT4GC64B8HG0NS-DI
+             vendor: Nanya Technology
+             physical id: 0
+             serial: 4E32067D
+             slot: ChannelA-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:1
+             description: SODIMM DDR3 Synchronous 1600 MHz (0,6 ns)
+             product: NT4GC64B8HG0NS-DI
+             vendor: Nanya Technology
+             physical id: 1
+             serial: 3739067C
+             slot: ChannelB-DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+     *-pci
+          description: Host bridge
+          product: 3rd Gen Core processor DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 09
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=ivb_uncore
+          resources: irq:0
+        *-display
+             description: VGA compatible controller
+             product: Ivy Bridge mobile GT2 [HD Graphics 4000]
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 resolution=1920,1080
+             resources: irq:30 memory:f6400000-f67fffff memory:e0000000-efffffff ioport:f000(size=64) memory:c0000-dffff
+        *-usb:0
+             description: USB controller
+             product: 7 Series/C210 Series Chipset Family USB xHCI Host Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:25 memory:f7f00000-f7f0ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 7.2.5-1-cachyos xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 7.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=4 speed=480Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 7.2.5-1-cachyos xhci-hcd
+                physical id: 1
+                bus info: usb@3
+                logical name: usb3
+                version: 7.02
+                capabilities: usb-3.00
+                configuration: driver=hub slots=4 speed=5000Mbit/s
+        *-communication
+             description: Communication controller
+             product: 7 Series/C216 Chipset Family MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:31 memory:f7f1b000-f7f1b00f
+        *-usb:1
+             description: USB controller
+             product: 7 Series/C216 Chipset Family USB Enhanced Host Controller #2
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:16 memory:f7f18000-f7f183ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 7.2.5-1-cachyos ehci_hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 7.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   description: USB hub
+                   product: Integrated Rate Matching Hub
+                   vendor: Intel Corp.
+                   physical id: 1
+                   bus info: usb@2:1
+                   version: 0.00
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=6 speed=480Mbit/s
+        *-multimedia
+             description: Audio device
+             product: 7 Series/C216 Chipset Family High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             logical name: card0
+             logical name: /dev/snd/controlC0
+             logical name: /dev/snd/hwC0D0
+             logical name: /dev/snd/hwC0D3
+             logical name: /dev/snd/pcmC0D0c
+             logical name: /dev/snd/pcmC0D0p
+             logical name: /dev/snd/pcmC0D3p
+             logical name: /dev/snd/pcmC0D7p
+             logical name: /dev/snd/pcmC0D8p
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress hda_compatible bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:32 memory:f7f10000-f7f13fff
+           *-input:0
+                product: HDA Intel PCH Headset Mic
+                physical id: 0
+                logical name: input10
+                logical name: /dev/input/event8
+           *-input:1
+                product: HDA Intel PCH Dock Mic
+                physical id: 1
+                logical name: input11
+                logical name: /dev/input/event9
+           *-input:2
+                product: HDA Intel PCH Dock Line Out
+                physical id: 2
+                logical name: input12
+                logical name: /dev/input/event10
+           *-input:3
+                product: HDA Intel PCH Headphone
+                physical id: 3
+                logical name: input13
+                logical name: /dev/input/event11
+           *-input:4
+                product: HDA Intel PCH HDMI/DP,pcm=3
+                physical id: 4
+                logical name: input14
+                logical name: /dev/input/event12
+           *-input:5
+                product: HDA Intel PCH HDMI/DP,pcm=7
+                physical id: 5
+                logical name: input15
+                logical name: /dev/input/event13
+           *-input:6
+                product: HDA Intel PCH HDMI/DP,pcm=8
+                physical id: 6
+                logical name: input16
+                logical name: /dev/input/event14
+        *-pci:0
+             description: PCI bridge
+             product: 7 Series/C216 Chipset Family PCI Express Root Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16
+        *-pci:1
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 memory:f7e00000-f7efffff
+           *-network DISABLED
+                description: Wireless interface
+                product: BCM43228 802.11a/b/g/n
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: wlan0
+                version: 00
+                serial: 9a:5a:73:34:89:22
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=wl0 driverversion=6.30.223.271 (r587334) latency=0 multicast=yes wireless=IEEE 802.11
+                resources: irq:17 memory:f7e00000-f7e03fff
+        *-pci:2
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 ioport:e000(size=4096) memory:f7200000-f7bfffff ioport:f0a00000(size=10485760)
+        *-pci:3
+             description: PCI bridge
+             product: 7 Series/C216 Chipset Family PCI Express Root Port 4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:19 ioport:d000(size=4096) memory:f6800000-f71fffff ioport:f0000000(size=10485760)
+        *-pci:4
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 6
+             vendor: Intel Corporation
+             physical id: 1c.5
+             bus info: pci@0000:00:1c.5
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 memory:f7d00000-f7dfffff
+           *-generic
+                description: MMC Host
+                product: OZ600FJ0/OZ900FJ0/OZ600FJS SD/MMC Card Reader Controller
+                vendor: O2 Micro, Inc.
+                physical id: 0
+                bus info: pci@0000:0b:00.0
+                logical name: mmc0
+                version: 05
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm pciexpress bus_master cap_list
+                configuration: driver=sdhci-pci latency=0
+                resources: irq:17 memory:f7d02000-f7d021ff
+        *-pci:5
+             description: PCI bridge
+             product: 7 Series/C210 Series Chipset Family PCI Express Root Port 7
+             vendor: Intel Corporation
+             physical id: 1c.6
+             bus info: pci@0000:00:1c.6
+             version: c4
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 memory:f7c00000-f7cfffff
+           *-network
+                description: Ethernet interface
+                product: NetXtreme BCM5761 Gigabit Ethernet PCIe
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:0c:00.0
+                logical name: enp12s0
+                version: 10
+                serial: b8:ca:3a:cd:15:d1
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm vpd msi pciexpress bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=tg3 driverversion=7.2.5-1-cachyos duplex=full firmware=5761-v3.80 ip=192.168.192.211 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:33 memory:f7c10000-f7c1ffff memory:f7c00000-f7c0ffff
+        *-usb:2
+             description: USB controller
+             product: 7 Series/C216 Chipset Family USB Enhanced Host Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:21 memory:f7f17000-f7f173ff
+           *-usbhost
+                product: EHCI Host Controller
+                vendor: Linux 7.2.5-1-cachyos ehci_hcd
+                physical id: 1
+                bus info: usb@4
+                logical name: usb4
+                version: 7.02
+                capabilities: usb-2.00
+                configuration: driver=hub slots=2 speed=480Mbit/s
+              *-usb
+                   description: USB hub
+                   product: Integrated Rate Matching Hub
+                   vendor: Intel Corp.
+                   physical id: 1
+                   bus info: usb@4:1
+                   version: 0.00
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=8 speed=480Mbit/s
+        *-isa
+             description: ISA bridge
+             product: HM77 Express Chipset LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 04
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: IBM Enhanced keyboard controller (101/2-key)
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:01
+                product: PnP device DLL053d
+                vendor: Dell Inc
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=i8042 aux
+           *-pnp00:02
+                product: ECP printer port
+                physical id: 2
+                capabilities: pnp
+        *-sata
+             description: SATA controller
+             product: 7 Series Chipset Family 6-port SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 04
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata msi pm ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:24 ioport:f0b0(size=8) ioport:f0a0(size=4) ioport:f090(size=8) ioport:f080(size=4) ioport:f060(size=32) memory:f7f16000-f7f167ff
+        *-serial
+             description: SMBus
+             product: 7 Series/C216 Chipset Family SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:18 memory:f7f15000-f7f150ff ioport:f040(size=32)
+  *-battery
+       product: DELL NH6K931
+       vendor: Sanyo
+       physical id: 1
+       version: 01/09/2013
+       serial: 0B93
+       slot: Sys. Battery Bay
+       capacity: 62160mWh
+       configuration: voltage=11,1V
+  *-power UNCLAIMED
+       description: To Be Filled By O.E.M.
+       product: To Be Filled By O.E.M.
+       vendor: To Be Filled By O.E.M.
+       physical id: 2
+       version: To Be Filled By O.E.M.
+       serial: To Be Filled By O.E.M.
+       capacity: 130mWh
+  *-input:0
+       product: Lid Switch
+       physical id: 3
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 4
+       logical name: input1
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: Sleep Button
+       physical id: 5
+       logical name: input2
+       logical name: /dev/input/event2
+       capabilities: platform
+  *-input:3
+       product: Power Button
+       physical id: 6
+       logical name: input3
+       logical name: /dev/input/event3
+       capabilities: platform
+  *-input:4
+       product: AT Translated Set 2 keyboard
+       physical id: 7
+       logical name: input4
+       logical name: /dev/input/event4
+       logical name: input4::capslock
+       logical name: input4::numlock
+       logical name: input4::scrolllock
+       capabilities: i8042
+  *-input:5
+       product: Video Bus
+       physical id: 8
+       logical name: input6
+       logical name: /dev/input/event5
+       capabilities: platform
+  *-input:6
+       product: PC Speaker
+       physical id: 9
+       logical name: input7
+       logical name: /dev/input/event6
+       capabilities: isa
+  *-input:7
+       product: AlpsPS/2 ALPS GlidePoint
+       physical id: a
+       logical name: input8
+       logical name: /dev/input/event15
+       logical name: /dev/input/mouse0
+       capabilities: i8042
+  *-input:8
+       product: Dell WMI hotkeys
+       physical id: b
+       logical name: input9
+       logical name: /dev/input/event7
+       capabilities: platform

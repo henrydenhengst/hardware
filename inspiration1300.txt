@@ -1,0 +1,391 @@
+inspiration1300
+    description: Portable Computer
+    product: ME051
+    vendor: Dell Inc.
+    serial: BTVBJ2J
+    width: 32 bits
+    capabilities: smbios-2.3 dmi-2.3
+    configuration: boot=normal chassis=portable uuid=4c4c4544-0054-5610-8042-c2c04f4a324a
+  *-core
+       description: Motherboard
+       product: 0RJ272
+       vendor: Dell Inc.
+       physical id: 0
+       serial: .BTVBJ2J.CN70166683031Q.
+     *-firmware
+          description: BIOS
+          vendor: Dell Inc.
+          physical id: 0
+          version: A09
+          date: 06/29/2006
+          size: 64KiB
+          capacity: 512KiB
+          capabilities: isa pci pcmcia pnp upgrade shadowing cdboot bootselect int13floppy720 int5printscreen int9keyboard int14serial int17printer int10video acpi usb agp smartbattery biosbootspecification netboot
+     *-cpu
+          description: CPU
+          product: Intel(R) Celeron(R) M processor         1.60GHz
+          vendor: Intel Corp.
+          physical id: 400
+          bus info: cpu@0
+          version: 6.13.8
+          slot: Microprocessor
+          size: 1600MHz
+          capacity: 2130MHz
+          width: 32 bits
+          clock: 133MHz
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov clflush dts acpi mmx fxsr sse sse2 ss tm pbe nx bts cpuid
+          configuration: microcode=32
+        *-cache:0
+             description: L1 cache
+             physical id: 700
+             size: 8KiB
+             capacity: 8KiB
+             capabilities: internal write-back data
+             configuration: level=1
+        *-cache:1
+             description: L2 cache
+             physical id: 701
+             size: 1MiB
+             capacity: 1MiB
+             clock: 66MHz (15.0ns)
+             capabilities: pipeline-burst internal varies unified
+             configuration: level=2
+     *-memory
+          description: System Memory
+          physical id: 1000
+          slot: System board or motherboard
+          size: 2GiB
+        *-bank:0
+             description: DIMM DDR Synchronous 667 MHz (1,5 ns)
+             vendor: Samsung
+             physical id: 0
+             serial: 501966E6
+             slot: DIMM_A
+             size: 1GiB
+             width: 64 bits
+             clock: 667MHz (1.5ns)
+        *-bank:1
+             description: DIMM DDR Synchronous 667 MHz (1,5 ns)
+             vendor: Samsung
+             physical id: 1
+             serial: 501966EC
+             slot: DIMM_B
+             size: 1GiB
+             width: 64 bits
+             clock: 667MHz (1.5ns)
+     *-pci
+          description: Host bridge
+          product: Mobile 915GM/PM/GMS/910GML Express Processor to DRAM Controller
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 03
+          width: 32 bits
+          clock: 33MHz
+        *-display:0
+             description: VGA compatible controller
+             product: Mobile 915GM/GMS/910GML Express Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 resolution=1280,800
+             resources: irq:16 memory:dff00000-dff7ffff ioport:eff8(size=8) memory:c0000000-cfffffff memory:dfec0000-dfefffff memory:c0000-dffff
+        *-display:1 UNCLAIMED
+             description: Display controller
+             product: Mobile 915GM/GMS/910GML Express Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2.1
+             bus info: pci@0000:00:02.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: latency=0
+             resources: memory:dff80000-dfffffff
+        *-multimedia
+             description: Audio device
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             logical name: card0
+             logical name: /dev/snd/controlC0
+             logical name: /dev/snd/hwC0D0
+             logical name: /dev/snd/pcmC0D0c
+             logical name: /dev/snd/pcmC0D0p
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:24 memory:dfebc000-dfebffff
+           *-input:0
+                product: HDA Intel Mic
+                physical id: 0
+                logical name: input7
+                logical name: /dev/input/event6
+           *-input:1
+                product: HDA Intel Headphone
+                physical id: 1
+                logical name: input8
+                logical name: /dev/input/event7
+        *-pci:0
+             description: PCI bridge
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) PCI Express Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:2000(size=4096) memory:80000000-801fffff ioport:80200000(size=2097152)
+        *-pci:1
+             description: PCI bridge
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) PCI Express Port 4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:19 ioport:d000(size=4096) memory:dfc00000-dfdfffff ioport:d0000000(size=2097152)
+        *-usb:0
+             description: USB controller
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:16 ioport:bf80(size=32)
+        *-usb:1
+             description: USB controller
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #2
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:17 ioport:bf60(size=32)
+        *-usb:2
+             description: USB controller
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #3
+             vendor: Intel Corporation
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:18 ioport:bf40(size=32)
+        *-usb:3
+             description: USB controller
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB UHCI #4
+             vendor: Intel Corporation
+             physical id: 1d.3
+             bus info: pci@0000:00:1d.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:19 ioport:bf20(size=32)
+        *-usb:4
+             description: USB controller
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) USB2 EHCI Controller
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:16 memory:b0000000-b00003ff
+        *-pci:2
+             description: PCI bridge
+             product: 82801 Mobile PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: d3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+             resources: memory:dfb00000-dfbfffff
+           *-network
+                description: Ethernet interface
+                product: BCM4401-B0 100Base-TX
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: 02
+                serial: 00:15:c5:69:e6:0f
+                size: 100Mbit/s
+                capacity: 100Mbit/s
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm bus_master cap_list ethernet physical mii 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=b44 driverversion=5.10.240-antix.1-486-smp duplex=full ip=192.168.192.210 latency=64 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                resources: irq:18 memory:dfbfe000-dfbfffff
+        *-isa
+             description: ISA bridge
+             product: 82801FBM (ICH6M) LPC Interface Bridge
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: PnP device PNP0c01
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0c01
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:02
+                product: PnP device PNP0c01
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:03
+                product: PnP device PNP0f13
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=i8042 aux
+           *-pnp00:04
+                product: PnP device PNP0303
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:05
+                product: PnP device PNP0b00
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:06
+                product: PnP device PNP0c01
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+        *-ide
+             description: IDE interface
+             product: 82801FB/FBM/FR/FW/FRW (ICH6 Family) IDE Controller
+             vendor: Intel Corporation
+             physical id: 1f.1
+             bus info: pci@0000:00:1f.1
+             logical name: scsi0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide isa_compat_mode pci_native_mode bus_master emulated
+             configuration: driver=ata_piix latency=0
+             resources: irq:16 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:bfa0(size=16)
+           *-disk
+                description: ATA Disk
+                product: SAMSUNG MP0402H
+                physical id: 0.0.0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/sda
+                version: 0-16
+                serial: S03WJ20L849329
+                size: 37GiB (40GB)
+                capabilities: partitioned partitioned:dos
+                configuration: ansiversion=5 logicalsectorsize=512 sectorsize=512 signature=2607b2bc
+              *-volume
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 1
+                   bus info: scsi@0:0.0.0,1
+                   logical name: /dev/sda1
+                   logical name: /
+                   version: 1.0
+                   serial: 328f3e27-b51b-455a-9429-a47c75999d6a
+                   size: 37GiB
+                   capacity: 37GiB
+                   capabilities: primary bootable journaled extended_attributes large_files huge_files dir_nlink 64bit extents ext4 ext2 initialized
+                   configuration: created=2026-08-24 12:05:45 filesystem=ext4 label=rootantiX26 lastmountpoint=/ modified=2026-08-24 11:58:29 mount.fstype=ext4 mount.options=rw,noatime mounted=2026-08-24 11:55:43 state=mounted
+           *-cdrom
+                description: DVD reader
+                product: CDRW/DVD SCB5265
+                vendor: PHILIPS
+                physical id: 0.1.0
+                bus info: scsi@0:0.1.0
+                logical name: /dev/cdrom
+                logical name: /dev/cdrw
+                logical name: /dev/dvd
+                logical name: /dev/sr0
+                version: TD17
+                capabilities: removable audio cd-r cd-rw dvd
+                configuration: ansiversion=5 status=nodisc
+  *-battery
+       product: DELL TD42967
+       vendor: Sony
+       physical id: 1
+       slot: Sys. Battery Bay
+       capacity: 20000mWh
+       configuration: voltage=14,8V
+  *-input:0
+       product: AT Translated Set 2 keyboard
+       physical id: 2
+       logical name: input0
+       logical name: /dev/input/event0
+       logical name: input0::capslock
+       logical name: input0::numlock
+       logical name: input0::scrolllock
+       capabilities: i8042
+  *-input:1
+       product: Video Bus
+       physical id: 3
+       logical name: input2
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: SynPS/2 Synaptics TouchPad
+       physical id: 4
+       logical name: input3
+       logical name: /dev/input/event2
+       logical name: /dev/input/mouse0
+       capabilities: i8042
+  *-input:3
+       product: Lid Switch
+       physical id: 5
+       logical name: input4
+       logical name: /dev/input/event3
+       capabilities: platform
+  *-input:4
+       product: Power Button
+       physical id: 6
+       logical name: input5
+       logical name: /dev/input/event4
+       capabilities: platform
+  *-input:5
+       product: Sleep Button
+       physical id: 7
+       logical name: input6
+       logical name: /dev/input/event5
+       capabilities: platform

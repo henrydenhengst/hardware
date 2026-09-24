@@ -1,0 +1,493 @@
+fbmb
+    description: Laptop
+    product: MacBook8,1 (System SKU#)
+    vendor: Apple Inc.
+    version: 1.0
+    serial: C02QF15JGF84
+    width: 64 bits
+    capabilities: smbios-2.7 dmi-2.7 smp vsyscall32
+    configuration: boot=normal chassis=laptop family=Crb sku=System SKU# uuid=5ae9a5ef-3ccc-59d8-83ec-af97420f14e5
+  *-core
+       description: Moederbord
+       product: Mac-BE0E8AC46FE800CC
+       vendor: Apple Inc.
+       physical id: 0
+       version: MacBook8,1
+       serial: C02533603BWFV9FAD
+       slot: Part Component
+     *-cache:0
+          description: L1 cache
+          physical id: 0
+          slot: L1 Cache
+          size: 32KiB
+          capacity: 32KiB
+          capabilities: synchronous internal write-back data
+          configuration: level=1
+     *-cache:1
+          description: L1 cache
+          physical id: 1
+          slot: L1 Cache
+          size: 32KiB
+          capacity: 32KiB
+          capabilities: synchronous internal write-back instruction
+          configuration: level=1
+     *-cache:2
+          description: L2 cache
+          physical id: 2
+          slot: L2 Cache
+          size: 256KiB
+          capacity: 256KiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=2
+     *-cache:3
+          description: L3 cache
+          physical id: 3
+          slot: L3 Cache
+          size: 4MiB
+          capacity: 4MiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=3
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) M-5Y31 CPU @ 0.90GHz
+          vendor: Intel Corp.
+          physical id: 4
+          bus info: cpu@0
+          version: 6.61.4
+          slot: U3E1
+          size: 2272MHz
+          capacity: 2400MHz
+          width: 64 bits
+          clock: 25MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap intel_pt xsaveopt dtherm ida arat pln pts vnmi md_clear flush_l1d cpufreq
+          configuration: cores=2 enabledcores=2 microcode=47 threads=4
+     *-firmware
+          description: BIOS
+          vendor: Apple Inc.
+          physical id: 5
+          version: MB81.88Z.0164.B19.1610201519
+          date: 10/20/2016
+          size: 128KiB
+          capacity: 8MiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom acpi smartbattery netboot uefi
+     *-memory
+          description: System Memory
+          physical id: 21
+          slot: Systeem- of moederbord
+          size: 8GiB
+        *-bank:0
+             description: SODIMM DDR3 Synchroon 1600 MHz (0,6 ns)
+             product: H9CCNNNCPTMLBR-NTD
+             vendor: Hynix Semiconductor (Hyundai Electronics)
+             physical id: 0
+             serial: 0x00000000
+             slot: DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+        *-bank:1
+             description: SODIMM DDR3 Synchroon 1600 MHz (0,6 ns)
+             product: H9CCNNNCPTMLBR-NTD
+             vendor: Hynix Semiconductor (Hyundai Electronics)
+             physical id: 1
+             serial: 0x00000000
+             slot: DIMM0
+             size: 4GiB
+             width: 64 bits
+             clock: 1600MHz (0.6ns)
+     *-pci
+          description: Host bridge
+          product: Broadwell-U Host Bridge -OPI
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 09
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=bdw_uncore
+          resources: irq:0
+        *-display
+             description: VGA compatible controller
+             product: HD Graphics 5300
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 mode=2560x1600 resolution=2560,1600 visual=truecolor xres=2560 yres=1600
+             resources: irq:55 memory:c0000000-c0ffffff memory:b0000000-bfffffff ioport:3000(size=64) memory:c0000-dffff
+        *-multimedia:0
+             description: Audio device
+             product: Broadwell-U Audio Controller
+             vendor: Intel Corporation
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             logical name: card0
+             logical name: /dev/snd/controlC0
+             logical name: /dev/snd/hwC0D0
+             logical name: /dev/snd/pcmC0D3p
+             logical name: /dev/snd/pcmC0D7p
+             logical name: /dev/snd/pcmC0D8p
+             version: 09
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:56 memory:c1810000-c1813fff
+           *-input:0
+                product: HDA Intel HDMI HDMI/DP,pcm=3
+                physical id: 0
+                logical name: input7
+                logical name: /dev/input/event7
+           *-input:1
+                product: HDA Intel HDMI HDMI/DP,pcm=7
+                physical id: 1
+                logical name: input8
+                logical name: /dev/input/event8
+           *-input:2
+                product: HDA Intel HDMI HDMI/DP,pcm=8
+                physical id: 2
+                logical name: input9
+                logical name: /dev/input/event9
+        *-usb
+             description: USB controller
+             product: Wildcat Point-LP USB xHCI Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:45 memory:c1800000-c180ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 6.17.0-35-generic xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 6.17
+                capabilities: usb-2.00
+                configuration: driver=hub slots=11 speed=480Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 6.17.0-35-generic xhci-hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 6.17
+                capabilities: usb-3.00
+                configuration: driver=hub slots=4 speed=5000Mbit/s
+        *-generic:0
+             description: DMA controller
+             product: Wildcat Point-LP Serial IO DMA Controller
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm eisa_dma bus_master cap_list
+             configuration: driver=dw_dmac_pci latency=0
+             resources: irq:20 memory:c181c000-c181cfff
+        *-serial:0 UNCLAIMED
+             description: Serial bus controller
+             product: Wildcat Point-LP Serial IO I2C Controller #1
+             vendor: Intel Corporation
+             physical id: 15.2
+             bus info: pci@0000:00:15.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: latency=0
+             resources: memory:c181b000-c181bfff
+        *-serial:1
+             description: Serial bus controller
+             product: Wildcat Point-LP Serial IO GSPI Controller #1
+             vendor: Intel Corporation
+             physical id: 15.4
+             bus info: pci@0000:00:15.4
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=pxa2xx_spi_pci latency=0
+             resources: irq:21 memory:c181a000-c181afff
+        *-communication:0
+             description: Serial controller
+             product: Wildcat Point-LP Serial IO UART Controller #0
+             vendor: Intel Corporation
+             physical id: 15.5
+             bus info: pci@0000:00:15.5
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm 16550 bus_master cap_list
+             configuration: driver=8250_lpss latency=0
+             resources: irq:21 memory:c1819000-c1819fff
+        *-communication:1
+             description: Communication controller
+             product: Wildcat Point-LP MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: irq:53 memory:c181d100-c181d11f
+        *-multimedia:1
+             description: Audio device
+             product: Wildcat Point-LP High Definition Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             logical name: card1
+             logical name: /dev/snd/controlC1
+             logical name: /dev/snd/hwC1D0
+             logical name: /dev/snd/pcmC1D0c
+             logical name: /dev/snd/pcmC1D0p
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=64
+             resources: irq:57 memory:c1814000-c1817fff
+           *-input:0
+                product: HDA Intel PCH Mic
+                physical id: 0
+                logical name: input10
+                logical name: /dev/input/event10
+           *-input:1
+                product: HDA Intel PCH Headphone
+                physical id: 1
+                logical name: input11
+                logical name: /dev/input/event11
+        *-pci:0
+             description: PCI bridge
+             product: Wildcat Point-LP PCI Express Root Port #1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: e3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:41 ioport:4000(size=4096) memory:c1900000-c58fffff ioport:c5900000(size=67108864)
+        *-pci:1
+             description: PCI bridge
+             product: Wildcat Point-LP PCI Express Root Port #3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: e3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:42 memory:c1000000-c14fffff
+           *-network
+                description: Wireless interface
+                product: BCM4350 802.11ac Wireless Network Adapter
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                logical name: wlp1s0
+                version: 05
+                serial: a8:66:7f:1d:2b:00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=brcmfmac driverversion=7.35.180.133 firmware=01-c45b39d6 ip=192.168.178.67 latency=0 multicast=yes wireless=IEEE 802.11
+                resources: irq:54 memory:c1400000-c1407fff memory:c1000000-c13fffff
+        *-pci:2
+             description: PCI bridge
+             product: Wildcat Point-LP PCI Express Root Port #4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: e3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:43 memory:c1600000-c17fffff ioport:a0000000(size=268435456)
+           *-multimedia UNCLAIMED
+                description: Multimedia controller
+                product: 720p FaceTime HD Camera
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: latency=0
+                resources: memory:c1700000-c170ffff memory:a0000000-afffffff memory:c1600000-c16fffff
+        *-pci:3
+             description: PCI bridge
+             product: Wildcat Point-LP PCI Express Root Port #5
+             vendor: Intel Corporation
+             physical id: 1c.4
+             bus info: pci@0000:00:1c.4
+             version: e3
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:44 memory:c1500000-c15fffff
+           *-storage
+                description: NVMe device
+                product: APPLE SSD AP0256H
+                vendor: Apple Inc.
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                logical name: /dev/nvme0
+                version: 5.844.01
+                serial: C02533603BWFV9FAD
+                width: 64 bits
+                clock: 33MHz
+                capabilities: storage pm msi pciexpress bus_master cap_list
+                configuration: driver=nvme latency=0 nqn=nqn.2014.08.org.nvmexpress:106b106bC02533603BWFV9FAD   APPLE SSD AP0256H state=live
+                resources: irq:50 memory:c1500000-c1501fff
+              *-namespace:0
+                   description: NVMe disk
+                   physical id: 0
+                   logical name: hwmon1
+              *-namespace:1
+                   description: NVMe disk
+                   physical id: 2
+                   logical name: /dev/ng0n1
+              *-namespace:2
+                   description: NVMe disk
+                   physical id: 1
+                   bus info: nvme@0:1
+                   logical name: /dev/nvme0n1
+                   size: 233GiB (251GB)
+                   capabilities: partitioned partitioned:dos
+                   configuration: logicalsectorsize=4096 sectorsize=4096 wwid=nvme.106b-4330323533333630334257465639464144-4150504c45205353442041503032353648-00000001
+                 *-volume:0 UNCLAIMED
+                      description: EFI GPT partition
+                      physical id: 1
+                      bus info: nvme@0:1,1
+                      capacity: 8207KiB
+                      capabilities: primary nofs
+                 *-volume:1 UNCLAIMED
+                      description: Linux filesystem partition
+                      physical id: 2
+                      bus info: nvme@0:1,2
+                      capacity: 3732MiB
+                      capabilities: primary bootable
+        *-isa
+             description: ISA bridge
+             product: Wildcat Point-LP LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: PnP device PNP0103
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0c02
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:02
+                product: PnP device PNP0b00
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:03
+                product: PnP device PNP0c02
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:04
+                product: PnP device PNP0c01
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+        *-serial:2
+             description: SMBus
+             product: Wildcat Point-LP SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:18 memory:c181d000-c181d0ff ioport:efa0(size=32)
+        *-generic:1
+             description: Signal processing controller
+             product: Wildcat Point-LP Thermal Management Controller
+             vendor: Intel Corporation
+             physical id: 1f.6
+             bus info: pci@0000:00:1f.6
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=intel_pch_thermal latency=0
+             resources: irq:18 memory:c1818000-c1818fff
+  *-battery
+       physical id: 1
+  *-input:0
+       product: Lid Switch
+       physical id: 2
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Power Button
+       physical id: 3
+       logical name: input1
+       logical name: /dev/input/event1
+       capabilities: platform
+  *-input:2
+       product: Sleep Button
+       physical id: 4
+       logical name: input2
+       logical name: /dev/input/event2
+       capabilities: platform
+  *-input:3
+       product: Power Button
+       physical id: 5
+       logical name: input3
+       logical name: /dev/input/event3
+       capabilities: platform
+  *-input:4
+       product: Apple SPI Keyboard
+       physical id: 6
+       logical name: input4
+       logical name: /dev/input/event4
+       logical name: input4::capslock
+       capabilities: spi
+  *-input:5
+       product: Apple SPI Touchpad
+       physical id: 7
+       logical name: input5
+       logical name: /dev/input/event5
+       logical name: /dev/input/mouse0
+       capabilities: spi
+  *-input:6
+       product: Video Bus
+       physical id: 8
+       logical name: input6
+       logical name: /dev/input/event6
+       capabilities: platform
