@@ -1,0 +1,529 @@
+dell-inspiration-henk
+    description: Portable Computer
+    product: Inspiron 1545
+    vendor: Dell Inc.
+    serial: JXP7BH1
+    width: 64 bits
+    capabilities: smbios-2.4 dmi-2.4 smp vsyscall32
+    configuration: boot=normal chassis=portable uuid=4c4c4544-0058-5010-8037-cac04f424831
+  *-core
+       description: Motherboard
+       product: 0G848F
+       vendor: Dell Inc.
+       physical id: 0
+       serial: .JXP7BH1.CN7016695L06NG.
+     *-firmware
+          description: BIOS
+          vendor: Dell Inc.
+          physical id: 0
+          version: A14
+          date: 12/07/2009
+          size: 64KiB
+          capacity: 16MiB
+          capabilities: isa pci pcmcia pnp upgrade shadowing cdboot bootselect int13floppy720 int5printscreen int9keyboard int14serial int17printer int10video acpi usb agp smartbattery biosbootspecification netboot
+     *-cpu
+          description: CPU
+          product: Pentium(R) Dual-Core CPU       T4200  @ 2.00GHz
+          vendor: Intel Corp.
+          physical id: 400
+          bus info: cpu@0
+          version: 6.23.10
+          slot: Microprocessor
+          size: 1595MHz
+          capacity: 2GHz
+          width: 64 bits
+          clock: 200MHz
+          capabilities: lm fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx x86-64 constant_tsc arch_perfmon pebs bts rep_good nopl cpuid aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm xsave lahf_lm pti dtherm cpufreq
+          configuration: cores=2 enabledcores=2 microcode=2571 threads=2
+        *-cache:0
+             description: L1 cache
+             physical id: 700
+             size: 128KiB
+             capacity: 128KiB
+             capabilities: internal write-back data
+             configuration: level=1
+        *-cache:1
+             description: L2 cache
+             physical id: 701
+             size: 1MiB
+             capacity: 1MiB
+             clock: 66MHz (15.0ns)
+             capabilities: pipeline-burst internal varies unified
+             configuration: level=2
+     *-memory
+          description: System Memory
+          physical id: 1000
+          slot: System board or motherboard
+          size: 2GiB
+        *-bank:0
+             description: DIMM DDR Synchronous 800 MHz (1,2 ns)
+             product: M4 70T2864EH3-CF7
+             vendor: Samsung
+             physical id: 0
+             serial: 8588F51D
+             slot: DIMM_A
+             size: 1GiB
+             width: 64 bits
+             clock: 800MHz (1.2ns)
+        *-bank:1
+             description: DIMM DDR Synchronous 800 MHz (1,2 ns)
+             product: M4 70T2864EH3-CF7
+             vendor: Samsung
+             physical id: 1
+             serial: 8588F62C
+             slot: DIMM_B
+             size: 1GiB
+             width: 64 bits
+             clock: 800MHz (1.2ns)
+     *-pci
+          description: Host bridge
+          product: Mobile 4 Series Chipset Memory Controller Hub
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 07
+          width: 32 bits
+          clock: 33MHz
+        *-display:0
+             description: VGA compatible controller
+             product: Mobile 4 Series Chipset Integrated Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             logical name: /dev/fb0
+             version: 07
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm vga_controller bus_master cap_list rom fb
+             configuration: depth=32 driver=i915 latency=0 resolution=1366,2304
+             resources: irq:16 memory:f6c00000-f6ffffff memory:e0000000-efffffff ioport:efe8(size=8) memory:c0000-dffff
+        *-display:1 UNCLAIMED
+             description: Display controller
+             product: Mobile 4 Series Chipset Integrated Graphics Controller
+             vendor: Intel Corporation
+             physical id: 2.1
+             bus info: pci@0000:00:02.1
+             version: 07
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: latency=0
+             resources: memory:f6b00000-f6bfffff
+        *-usb:0
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #4
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:00:1a.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:20 ioport:6f60(size=32)
+        *-usb:1
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #5
+             vendor: Intel Corporation
+             physical id: 1a.1
+             bus info: pci@0000:00:1a.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:21 ioport:6f80(size=32)
+        *-usb:2
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #6
+             vendor: Intel Corporation
+             physical id: 1a.2
+             bus info: pci@0000:00:1a.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:22 ioport:6fa0(size=32)
+        *-usb:3
+             description: USB controller
+             product: 82801I (ICH9 Family) USB2 EHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1a.7
+             bus info: pci@0000:00:1a.7
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:22 memory:fed1c400-fed1c7ff
+        *-multimedia
+             description: Audio device
+             product: 82801I (ICH9 Family) HD Audio Controller
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             logical name: card0
+             logical name: /dev/snd/controlC0
+             logical name: /dev/snd/hwC0D0
+             logical name: /dev/snd/pcmC0D0c
+             logical name: /dev/snd/pcmC0D0p
+             logical name: /dev/snd/pcmC0D1p
+             logical name: /dev/snd/pcmC0D2c
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi pciexpress bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:25 memory:f6afc000-f6afffff
+           *-input:0
+                product: HDA Intel Mic
+                physical id: 0
+                logical name: input12
+                logical name: /dev/input/event5
+           *-input:1
+                product: HDA Intel Headphone
+                physical id: 1
+                logical name: input13
+                logical name: /dev/input/event6
+        *-pci:0
+             description: PCI bridge
+             product: 82801I (ICH9 Family) PCI Express Port 1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:2000(size=4096) memory:80000000-801fffff ioport:80200000(size=2097152)
+        *-pci:1
+             description: PCI bridge
+             product: 82801I (ICH9 Family) PCI Express Port 2
+             vendor: Intel Corporation
+             physical id: 1c.1
+             bus info: pci@0000:00:1c.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 ioport:3000(size=4096) memory:f6900000-f69fffff ioport:80400000(size=2097152)
+           *-network
+                description: Wireless interface
+                product: BCM4312 802.11b/g LP-PHY
+                vendor: Broadcom Inc. and subsidiaries
+                physical id: 0
+                bus info: pci@0000:0c:00.0
+                logical name: wlan0
+                version: 01
+                serial: 00:25:56:0f:81:5a
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=wl0 driverversion=6.30.223.271 (r587334) latency=0 multicast=yes wireless=IEEE 802.11
+                resources: irq:17 memory:f69fc000-f69fffff
+        *-pci:2
+             description: PCI bridge
+             product: 82801I (ICH9 Family) PCI Express Port 3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 ioport:d000(size=4096) memory:f6800000-f68fffff ioport:80600000(size=2097152)
+           *-network
+                description: Ethernet interface
+                product: 88E8040 PCI-E Fast Ethernet Controller
+                vendor: Marvell Technology Group Ltd.
+                physical id: 0
+                bus info: pci@0000:09:00.0
+                logical name: eth0
+                version: 13
+                serial: 00:23:ae:35:e5:5e
+                size: 100Mbit/s
+                capacity: 100Mbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=sky2 driverversion=1.30 duplex=full ip=192.168.192.225 latency=0 link=yes multicast=yes port=twisted pair speed=100Mbit/s
+                resources: irq:18 memory:f68fc000-f68fffff ioport:de00(size=256)
+        *-pci:3
+             description: PCI bridge
+             product: 82801I (ICH9 Family) PCI Express Port 5
+             vendor: Intel Corporation
+             physical id: 1c.4
+             bus info: pci@0000:00:1c.4
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:c000(size=4096) memory:f6600000-f67fffff ioport:f0000000(size=2097152)
+        *-usb:4
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:20 ioport:6f00(size=32)
+        *-usb:5
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #2
+             vendor: Intel Corporation
+             physical id: 1d.1
+             bus info: pci@0000:00:1d.1
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:21 ioport:6f20(size=32)
+        *-usb:6
+             description: USB controller
+             product: 82801I (ICH9 Family) USB UHCI Controller #3
+             vendor: Intel Corporation
+             physical id: 1d.2
+             bus info: pci@0000:00:1d.2
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master cap_list
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:22 ioport:6f40(size=32)
+        *-usb:7
+             description: USB controller
+             product: 82801I (ICH9 Family) USB2 EHCI Controller #1
+             vendor: Intel Corporation
+             physical id: 1d.7
+             bus info: pci@0000:00:1d.7
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=0
+             resources: irq:20 memory:fed1c000-fed1c3ff
+        *-pci:4
+             description: PCI bridge
+             product: 82801 Mobile PCI Bridge
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 93
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci subtractive_decode bus_master cap_list
+        *-isa
+             description: ISA bridge
+             product: ICH9M LPC Interface Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master cap_list
+             configuration: driver=lpc_ich latency=0
+             resources: irq:0
+           *-pnp00:00
+                product: PnP device PNP0c02
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:01
+                product: PnP device PNP0f13
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=i8042 aux
+           *-pnp00:02
+                product: PnP device PNP0303
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=i8042 kbd
+           *-pnp00:03
+                product: PnP device PNP0b00
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:04
+                product: PnP device PNP0c01
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:05
+                product: PnP device PNP0103
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:06
+                product: PnP device PNP0c01
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:07
+                product: PnP device PNP0c01
+                physical id: 7
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:08
+                product: PnP device PNP0c01
+                physical id: 8
+                capabilities: pnp
+                configuration: driver=system
+        *-sata
+             description: SATA controller
+             product: 82801IBM/IEM (ICH9M/ICH9M-E) 4 port SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             logical name: scsi0
+             logical name: scsi1
+             version: 03
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata msi pm ahci_1.0 bus_master cap_list emulated
+             configuration: driver=ahci latency=0
+             resources: irq:24 ioport:6e70(size=8) ioport:6e78(size=4) ioport:6e80(size=8) ioport:6e88(size=4) ioport:6ea0(size=32) memory:fed1c800-fed1cfff
+           *-disk
+                description: ATA Disk
+                product: ST9320325AS
+                physical id: 0
+                bus info: scsi@0:0.0.0
+                logical name: /dev/sda
+                version: DEM1
+                serial: 5VD06XFJ
+                size: 298GiB (320GB)
+                capabilities: partitioned partitioned:dos
+                configuration: ansiversion=5 logicalsectorsize=512 sectorsize=512 signature=6055e6b6
+              *-volume:0
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 1
+                   bus info: scsi@0:0.0.0,1
+                   logical name: /dev/sda1
+                   logical name: /
+                   version: 1.0
+                   serial: 02c25c26-025b-44e9-80f8-85e4cad382a9
+                   size: 98GiB
+                   capacity: 98GiB
+                   capabilities: primary bootable journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                   configuration: created=2026-10-14 12:18:16 filesystem=ext4 label=rootantiX26 lastmountpoint=/ modified=2026-10-14 12:40:52 mount.fstype=ext4 mount.options=rw,noatime mounted=2026-10-14 12:41:08 state=mounted
+              *-volume:1
+                   description: EXT4 volume
+                   vendor: Linux
+                   physical id: 2
+                   bus info: scsi@0:0.0.0,2
+                   logical name: /dev/sda2
+                   logical name: /home
+                   version: 1.0
+                   serial: 741910d1-6a73-40ee-a39a-c4fb37d91a02
+                   size: 199GiB
+                   capacity: 199GiB
+                   capabilities: primary journaled extended_attributes large_files huge_files dir_nlink recover 64bit extents ext4 ext2 initialized
+                   configuration: created=2026-10-14 12:18:26 filesystem=ext4 label=homeantiX lastmountpoint=/home modified=2026-10-14 12:41:09 mount.fstype=ext4 mount.options=rw,noatime mounted=2026-10-14 12:41:09 state=mounted
+           *-cdrom
+                description: DVD-RAM writer
+                product: DVD+-RW TS-L633B
+                vendor: TSSTcorp
+                physical id: 1
+                bus info: scsi@1:0.0.0
+                logical name: /dev/cdrom
+                logical name: /dev/cdrw
+                logical name: /dev/dvd
+                logical name: /dev/dvdrw
+                logical name: /dev/sr0
+                version: D400
+                capabilities: removable audio cd-r cd-rw dvd dvd-r dvd-ram
+                configuration: ansiversion=5 status=nodisc
+        *-serial
+             description: SMBus
+             product: 82801I (ICH9 Family) SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 03
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: irq:18 memory:f6afbf00-f6afbfff ioport:1100(size=32)
+     *-scsi
+          physical id: 1
+          bus info: usb@3:5
+          logical name: scsi6
+          capabilities: emulated scsi-host
+          configuration: driver=ums-realtek
+        *-disk
+             description: SCSI Disk
+             product: Multi-Card
+             vendor: Generic-
+             physical id: 0.0.0
+             bus info: scsi@6:0.0.0
+             logical name: /dev/sdb
+             version: 1.00
+             capabilities: removable
+             configuration: logicalsectorsize=512 sectorsize=512
+           *-medium
+                physical id: 0
+                logical name: /dev/sdb
+  *-battery
+       product: DELL HP27794
+       vendor: Sanyo
+       physical id: 1
+       slot: Sys. Battery Bay
+       capacity: 20000mWh
+       configuration: voltage=14,8V
+  *-input:0
+       product: AT Translated Set 2 keyboard
+       physical id: 2
+       logical name: input0
+       logical name: /dev/input/event0
+       logical name: input0::capslock
+       logical name: input0::numlock
+       logical name: input0::scrolllock
+       capabilities: i8042
+  *-input:1
+       product: Power Button
+       physical id: 3
+       logical name: input10
+       logical name: /dev/input/event3
+       capabilities: platform
+  *-input:2
+       product: Sleep Button
+       physical id: 4
+       logical name: input11
+       logical name: /dev/input/event4
+       capabilities: platform
+  *-input:3
+       product: Dell WMI hotkeys
+       physical id: 5
+       logical name: input14
+       logical name: /dev/input/event7
+       capabilities: platform
+  *-input:4
+       product: Video Bus
+       physical id: 6
+       logical name: input15
+       logical name: /dev/input/event8
+       capabilities: platform
+  *-input:5
+       product: AlpsPS/2 ALPS GlidePoint
+       physical id: 7
+       logical name: input6
+       logical name: /dev/input/event1
+       logical name: /dev/input/mouse0
+       capabilities: i8042
+  *-input:6
+       product: Lid Switch
+       physical id: 8
+       logical name: input9
+       logical name: /dev/input/event2
+       capabilities: platform
